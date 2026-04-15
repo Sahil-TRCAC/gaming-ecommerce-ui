@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusGaming | Premium Gaming Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <span>LOADING...</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>NEXUS<span class="accent">GAMING</span></span>
+            </a>
+            
+            <nav class="nav" id="nav">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#products" class="nav-link">Games</a>
+                <a href="#categories" class="nav-link">Categories</a>
+                <a href="#deals" class="nav-link">Deals</a>
+                <a href="#about" class="nav-link">About</a>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Search games..." id="searchInput">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <button class="icon-btn" id="wishlistBtn">
+                    <i class="fas fa-heart"></i>
+                    <span class="badge" id="wishlistCount">0</span>
+                </button>
+                
+                <button class="icon-btn" id="cartBtn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge" id="cartCount">0</span>
+                </button>
+                
+                <button class="icon-btn" id="userBtn">
+                    <i class="fas fa-user"></i>
+                </button>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">🎮 New Releases Available</span>
+                <h1 class="hero-title">
+                    <span class="glitch" data-text="LEVEL UP">LEVEL UP</span>
+                    <span>YOUR GAMING</span>
+                </h1>
+                <p class="hero-text">Discover the latest games, exclusive deals, and join millions of gamers worldwide. Your next adventure starts here.</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">
+                        <span>Explore Games</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#deals" class="btn btn-secondary">
+                        <span>View Deals</span>
+                        <i class="fas fa-tags"></i>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="50000">0</span>+
+                        <span class="stat-label">Games</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="2000000">0</span>+
+                        <span class="stat-label">Players</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="99">0</span>%
+                        <span class="stat-label">Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-card">
+                    <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=500" alt="Featured Game">
+                    <div class="hero-card-content">
+                        <span class="hero-card-badge">Featured</span>
+                        <h3>Cyber Legends 2077</h3>
+                        <p>$59.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#products">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Browse</span>
+                <h2 class="section-title">Game Categories</h2>
+                <p class="section-text">Find your perfect game genre</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card" data-category="action">
+                    <div class="category-icon">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <h3>Action</h3>
+                    <span>250+ Games</span>
+                </div>
+                <div class="category-card" data-category="rpg">
+                    <div class="category-icon">
+                        <i class="fas fa-hat-wizard"></i>
+                    </div>
+                    <h3>RPG</h3>
+                    <span>180+ Games</span>
+                </div>
+                <div class="category-card" data-category="sports">
+                    <div class="category-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3>Sports</h3>
+                    <span>120+ Games</span>
+                </div>
+                <div class="category-card" data-category="racing">
+                    <div class="category-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Racing</h3>
+                    <span>90+ Games</span>
+                </div>
+                <div class="category-card" data-category="adventure">
+                    <div class="category-icon">
+                        <i class="fas fa-compass"></i>
+                    </div>
+                    <h3>Adventure</h3>
+                    <span>200+ Games</span>
+                </div>
+                <div class="category-card" data-category="strategy">
+                    <div class="category-icon">
+                        <i class="fas fa-chess"></i>
+                    </div>
+                    <h3>Strategy</h3>
+                    <span>150+ Games</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Shop</span>
+                <h2 class="section-title">Featured Games</h2>
+                <p class="section-text">Handpicked selection of the best games</p>
+            </div>
+            
+            <div class="products-filter">
+                <button class="filter-btn active" data-filter="all">All Games</button>
+                <button class="filter-btn" data-filter="action">Action</button>
+                <button class="filter-btn" data-filter="rpg">RPG</button>
+                <button class="filter-btn" data-filter="sports">Sports</button>
+                <button class="filter-btn" data-filter="racing">Racing</button>
+                <button class="filter-btn" data-filter="adventure">Adventure</button>
+            </div>
+            
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be inserted by JavaScript -->
+            </div>
+            
+            <div class="products-pagination">
+                <button class="pagination-btn" id="loadMore">
+                    <span>Load More Games</span>
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals Section -->
+    <section class="deals" id="deals">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">🔥 Hot</span>
+                <h2 class="section-title">Special Deals</h2>
+                <p class="section-text">Limited time offers you don't want to miss</p>
+            </div>
+            
+            <div class="deals-timer">
+                <h3>Deal Ends In:</h3>
+                <div class="timer" id="dealTimer">
+                    <div class="timer-block">
+                        <span class="timer-number" id="days">00</span>
+                        <span class="timer-label">Days</span>
+                    </div>
+                    <div class="timer-block">
+                        <span class="timer-number" id="hours">00</span>
+                        <span class="timer-label">Hours</span>
+                    </div>
+                    <div class="timer-block">
+                        <span class="timer-number" id="minutes">00</span>
+                        <span class="timer-label">Minutes</span>
+                    </div>
+                    <div class="timer-block">
+                        <span class="timer-number" id="seconds">00</span>
+                        <span class="timer-label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="deals-grid" id="dealsGrid">
+                <!-- Deals will be inserted by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck-fast"></i>
+                    </div>
+                    <h3>Instant Delivery</h3>
+                    <p>Get your game keys delivered instantly to your email</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h3>Secure Payment</h3>
+                    <p>Your transactions are protected with 256-bit encryption</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Our team is always ready to help you with any issues</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rotate-left"></i>
+                    </div>
+                    <h3>Money Back</h3>
+                    <p>30-day money back guarantee on all purchases</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Stay Updated</h2>
+                    <p>Subscribe to our newsletter for exclusive deals and gaming news</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Subscribe</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-badge">About Us</span>
+                    <h2>We Live and Breathe Gaming</h2>
+                    <p>NexusGaming was founded by passionate gamers who wanted to create the ultimate destination for gaming enthusiasts. We curate the best games from around the world and deliver them to you at competitive prices.</p>
+                    <p>Our mission is simple: to bring joy to millions of gamers by providing an unmatched shopping experience with instant delivery, secure payments, and exceptional customer support.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Trusted by 2M+ gamers</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Official partnerships</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Award-winning service</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600" alt="Gaming Setup">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <i class="fas fa-gamepad"></i>
+                        <span>NEXUS<span class="accent">GAMING</span></span>
+                    </a>
+                    <p>Your ultimate destination for gaming. Discover, play, and conquer.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-twitch"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#products">Games</a>
+                    <a href="#deals">Deals</a>
+                    <a href="#about">About Us</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <a href="#">Help Center</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Live Chat</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Refund Policy</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NexusGaming. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                    <i class="fab fa-bitcoin"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> Your Cart</h3>
+            <button class="close-btn" id="closeCart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be inserted by JavaScript -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="btn btn-primary btn-block" id="checkoutBtn">
+                <span>Checkout</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Wishlist Sidebar -->
+    <div class="wishlist-sidebar" id="wishlistSidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-heart"></i> Wishlist</h3>
+            <button class="close-btn" id="closeWishlist"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="wishlistItems">
+            <!-- Wishlist items will be inserted by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal"><i class="fas fa-times"></i></button>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content will be inserted by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Auth Modal -->
+    <div class="modal" id="authModal">
+        <div class="modal-content auth-modal">
+            <button class="modal-close" id="closeAuthModal"><i class="fas fa-times"></i></button>
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="login">Login</button>
+                <button class="auth-tab" data-tab="register">Register</button>
+            </div>
+            <div class="auth-forms">
+                <form class="auth-form active" id="loginForm">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    <p class="auth-link">Forgot your password? <a href="#">Reset it</a></p>
+                </form>
+                <form class="auth-form" id="registerForm">
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" placeholder="Choose a username" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="Create a password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Item added to cart!</span>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
